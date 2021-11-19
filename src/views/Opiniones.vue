@@ -1,30 +1,30 @@
 <template>
     <div>
-        <h2> Lista de Juegos Disponibles</h2>
-        <CardJuego></CardJuego>
+        <h2>Lista de Opiniones</h2>
+        <ListaOpiniones></ListaOpiniones>
     </div>
 </template>
 
 <script>
-import CardJuego from '@/components/CardJuego.vue'
+import ListaOpiniones from '@/components/ListaOpiniones.vue'
 export default {
-    name: 'home',
+    name: 'opiniones',
     // props: {},
     data: function(){
         return {}
     },
     // computed: {},
-    //methods: {
+    methods: {
         // -- UI Modification
         // -- Data fetching
         // -- Data handling and transformations
         // -- Validations and Error handling
         // -- Other functions
         // -- Vuex mappings
-    //},
+    },
     // watch: {},
-    components: {
-        CardJuego,
+    components: {   
+        ListaOpiniones
     },
     // mixins: [],
     // filters: {},

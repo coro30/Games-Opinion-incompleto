@@ -1,12 +1,40 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <Navegation></Navegation>
+    
   </div>
 </template>
+
+<script>
+import Navegation from "@/views/Navegation.vue";
+
+export default {
+  name: "App",
+  // props: {},
+  data: function () {
+    return {};
+  },
+  // computed: {},
+  methods: {
+    
+    // -- UI Modification
+    // -- Data fetching
+    // -- Data handling and transformations
+    // -- Validations and Error handling
+    // -- Other functions
+    // -- Vuex mappings
+  },
+  // watch: {},
+  components: {
+    Navegation,
+  },
+  // mixins: [],
+  // filters: {},
+  
+  // -- End Lifecycle Methods
+};
+</script>
+
 
 <style lang="scss">
 #app {
@@ -16,17 +44,10 @@
   text-align: center;
   color: #2c3e50;
 }
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 </style>

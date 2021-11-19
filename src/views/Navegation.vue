@@ -1,30 +1,29 @@
 <template>
-    <div>
-        <h2> Lista de Juegos Disponibles</h2>
-        <CardJuego></CardJuego>
-    </div>
+<div>
+    <MenuNavegation></MenuNavegation>
+</div>
 </template>
 
 <script>
-import CardJuego from '@/components/CardJuego.vue'
+import MenuNavegation from '@/components/MenuNavegation.vue'
 export default {
-    name: 'home',
+    name: 'navegation',
     // props: {},
     data: function(){
         return {}
     },
     // computed: {},
-    //methods: {
+    methods: {
         // -- UI Modification
         // -- Data fetching
         // -- Data handling and transformations
         // -- Validations and Error handling
         // -- Other functions
         // -- Vuex mappings
-    //},
+    },
     // watch: {},
     components: {
-        CardJuego,
+        MenuNavegation
     },
     // mixins: [],
     // filters: {},
